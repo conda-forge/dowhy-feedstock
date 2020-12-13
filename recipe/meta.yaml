@@ -1,5 +1,5 @@
 {% set name = "dowhy" %}
-{% set version = "0.5" %}
+{% set version = "0.5.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: e9e7297559d47cbf79215f8a1c1d2019456b6cb12f6f6490afaa6f4b5be6fc3f
+  sha256: 09186a1bc8e93ea541a0f98c35515d458f7c83e5f7109c06138039ec1205a322
 
 build:
   number: 0
