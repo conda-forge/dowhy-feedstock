@@ -1,5 +1,5 @@
 {% set name = "dowhy" %}
-{% set version = "0.5.1" %}
+{% set version = "0.6" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 09186a1bc8e93ea541a0f98c35515d458f7c83e5f7109c06138039ec1205a322
+  sha256: c7650e5be1d4f44968eabad27b7a8206f14cedcef8ab091b696ac3c4f0b9793e
 
 build:
   number: 0
@@ -19,7 +19,6 @@ requirements:
     - pip
     - python >=3.5
   run:
-    - matplotlib-base
     - networkx >=2.0
     - numpy >=1.15
     - pandas >=0.24
