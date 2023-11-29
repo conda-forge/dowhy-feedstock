@@ -20,6 +20,7 @@ requirements:
     - python ==3.10
     - poetry
   run:
+    - matplotlib
     - poetry
     - networkx >=2.0
     - numpy >=1.15
