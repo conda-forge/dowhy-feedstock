@@ -18,7 +18,9 @@ requirements:
   host:
     - pip
     - python >=3.5
+    - poetry
   run:
+    - poetry
     - networkx >=2.0
     - numpy >=1.15
     - pandas >=0.24
