@@ -20,7 +20,7 @@ requirements:
     - python ==3.10
     - poetry
   run:
-    - matplotlib
+    - matplotlib-base
     - poetry
     - networkx >=2.0
     - numpy >=1.15
@@ -31,6 +31,8 @@ requirements:
     - scipy
     - statsmodels
     - sympy >=1.4
+    - tqdm
+    - econml
 
 test:
   imports:
