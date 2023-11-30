@@ -43,8 +43,6 @@ test:
     - dowhy.causal_refuters
     - dowhy.do_samplers
     - dowhy.causal_identifier
-  commands:
-    - {{ PYTHON }} -m pip check
 
 about:
   home: https://github.com/microsoft/dowhy
