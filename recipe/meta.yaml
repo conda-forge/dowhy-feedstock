@@ -30,7 +30,6 @@ requirements:
     - scikit-learn >1.0
     - joblib >=1.1.0
     - tqdm >=4.64.0
-    - causal-learn >=0.1.3.0
     - matplotlib-base
     - poetry
     - python >=3.8,<3.12
@@ -43,6 +42,10 @@ test:
     - dowhy.causal_estimators
     - dowhy.causal_refuters
     - dowhy.do_samplers
+    - dowhy.causal_identifier
+    - dowhy.gcm 
+  commands:
+    - pip check
 
 about:
   home: https://github.com/microsoft/dowhy
