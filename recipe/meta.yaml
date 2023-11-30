@@ -1,5 +1,5 @@
 {% set name = "dowhy" %}
-{% set version = "0.8" %}
+{% set version = "0.10.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,27 +7,33 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 0711489d44de3891bbf853019f60a36a50ff37e33f4173b8e85e93392f37c5f7
+  sha256: e2dcf7e95a98c445b142a9d832496a78cdc75ad4cd3f3e3937a987463ad6e7de
 
 build:
-  number: 0
+  number: 2
   script: {{ PYTHON }} -m pip install . --no-deps -vv
   noarch: python
 
 requirements:
   host:
     - pip
-    - python >=3.5
+    - python >=3.8,<3.12
+    - poetry
   run:
-    - networkx >=2.0
-    - numpy >=1.15
-    - pandas >=0.24
-    - pydot >=1.4
-    - python >=3.5
-    - scikit-learn
-    - scipy
-    - statsmodels
-    - sympy >=1.4
+    - cython >=0.29.32
+    - scipy >=1.4.1
+    - statsmodels >=0.13.5
+    - numpy >=1.20
+    - pandas >=1.4.3
+    - networkx >=2.8.5
+    - sympy >=1.10.1
+    - scikit-learn >1.0
+    - joblib >=1.1.0
+    - tqdm >=4.64.0
+    - matplotlib-base
+    - poetry
+    - python >=3.8,<3.12
+    - cvxpy >=1.2.2
 
 test:
   imports:
@@ -36,6 +42,7 @@ test:
     - dowhy.causal_estimators
     - dowhy.causal_refuters
     - dowhy.do_samplers
+    - dowhy.causal_identifier
 
 about:
   home: https://github.com/microsoft/dowhy

@@ -1,11 +1,11 @@
-About dowhy
-===========
+About dowhy-feedstock
+=====================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/dowhy-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/microsoft/dowhy
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/dowhy-feedstock/blob/main/LICENSE.txt)
 
 Summary: DoWhy is a Python library for causal inference that supports explicit modeling and testing of causal assumptions.
 
