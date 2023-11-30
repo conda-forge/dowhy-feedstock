@@ -44,7 +44,7 @@ test:
     - dowhy.do_samplers
     - dowhy.causal_identifier
   commands:
-    - pip check
+    - {{ PYTHON }} -m pip check
 
 about:
   home: https://github.com/microsoft/dowhy
