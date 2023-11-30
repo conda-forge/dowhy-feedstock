@@ -29,7 +29,7 @@ requirements:
     - sympy >=1.10.1
     - scikit-learn >1.0
     - joblib >=1.1.0
-    - tqdm >=4.64.0
+    - tqdm >=4.65.0
     - matplotlib-base
     - poetry
     - python >=3.8,<3.12
