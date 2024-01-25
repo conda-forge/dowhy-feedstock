@@ -1,5 +1,5 @@
 {% set name = "dowhy" %}
-{% set version = "0.10.1" %}
+{% set version = "0.11" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: e2dcf7e95a98c445b142a9d832496a78cdc75ad4cd3f3e3937a987463ad6e7de
+  sha256: 714b577442470921a7d012ff56084527d784ec806dad66a907d04047bd8ab11e
 
 build:
   number: 2
@@ -32,6 +32,7 @@ requirements:
     - tqdm >=4.64.0
     - matplotlib-base
     - poetry
+    - causal-learn
     - python >=3.8,<3.12
     - cvxpy >=1.2.2
 
