@@ -32,6 +32,7 @@ requirements:
     - tqdm >=4.64.0
     - matplotlib-base
     - poetry
+    - causal-learn
     - python >=3.8,<3.12
     - cvxpy >=1.2.2
 
