@@ -10,14 +10,14 @@ source:
   sha256: de67fbb3066d25cb065b32af669373065e2f18dfd1f95938da346bc6a315d163
 
 build:
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . --no-deps -vv
   noarch: python
 
 requirements:
   host:
     - pip
-    - python >=3.8,<3.12
+    - python {{ python_min }}
     - poetry
   run:
     - cython >=0.29.32
@@ -33,10 +33,12 @@ requirements:
     - matplotlib-base
     - poetry
     - causal-learn
-    - python >=3.8,<3.12
+    - python >={{ python_min }},<3.12
     - cvxpy >=1.2.2
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - dowhy
     - dowhy.api
