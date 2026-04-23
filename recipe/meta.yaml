@@ -1,5 +1,5 @@
 {% set name = "dowhy" %}
-{% set version = "0.13" %}
+{% set version = "0.14" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 865683155ae1383cd1fc66eb26d046fdd2337723d0ccbfe5504575e0f9eca1f5
+  sha256: 18f48882bc2cd3452ed3536ae3529a196acfa3b1e21b8978b71934e65cabb665
 
 build:
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . --no-deps -vv
   noarch: python
 
@@ -33,7 +33,7 @@ requirements:
     - matplotlib-base
     - poetry
     - causal-learn
-    - python >={{ python_min }},<3.12
+    - python >={{ python_min }},<3.14
     - cvxpy >=1.2.2
 
 test:
